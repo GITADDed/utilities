@@ -13,7 +13,7 @@ def ras (x1, y1, x2, y2, x3, y3):
     dl=math.sqrt((x3-xz)*(x3-xz)+(y3-xz*k-d)*(y3-xz*k-d))
   return dl
 
-k = 4
+k = 3
 
 xa, ya, xb, yb = [1419, 110 + k, 168, 231 + k]
 xc, yc, xd, yd = [59, 189, 1380, 61]

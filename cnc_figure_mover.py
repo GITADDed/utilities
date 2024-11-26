@@ -4,7 +4,7 @@ file_end = '.tap'
 begin = 4
 end = 19
 axis = 'Y'
-ch_val = 11
+ch_val = 10
 with open(file_path + file_name + file_end) as file:
     ch_f = open(file_path + file_name + '_changed_copy' + file_end, "w")
     commands_full = file.read()
