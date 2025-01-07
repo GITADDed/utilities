@@ -1,7 +1,7 @@
-file_path = 'C:\\Users\\Administrator\\PythonProgs\\test\\lidsorig\\'
-file_path_ch = 'C:\\Users\\Administrator\\PythonProgs\\test\\lids\\'
+file_path = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lidsorig\\'
+file_path_ch = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lids\\'
 
-file_name = '1.9'
+file_name = '1.95'
 postfix = '_changed_copy'
 file_end = '.tap'
 
@@ -108,9 +108,12 @@ g_z_ch_val = 0
 #lids 1.8
 #be_arr = [[4, 19], [45, 58], [84, 97], [124, 137]]
 #lids 1.9
-be_arr = [[4, 19], [45, 58], [85, 99], [125, 139]]
+#be_arr = [[4, 19], [45, 58], [85, 99], [125, 139]]
 #lids 2.0
 #be_arr = [[4, 17], [44, 58], [85, 98], [124, 137]]
+#lids 1.95
+be_arr = [[4, 18], [45, 58], [84, 98], [124, 138]]
+
 
 g_begin = be_arr[0][0]
 g_end = be_arr[0][1]
