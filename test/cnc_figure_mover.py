@@ -1,7 +1,7 @@
 file_path = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lidsorig\\'
 file_path_ch = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lids\\'
 
-file_name = '1.95'
+file_name = '1.6'
 postfix = '_changed_copy'
 file_end = '.tap'
 
@@ -103,6 +103,8 @@ g_z_ch_val = 0
 #be_arr = [[43, 56], [82, 96], [122, 135], [162, 175]]
 # lids 1.75
 #be_arr = [[4, 17]]
+# lids 1.6
+be_arr = [[3, 16], [42, 56], [83, 97], [124, 137], [163, 176]]
 # lids 1.7
 #be_arr = [[3, 16], [43, 56], [82, 95], [121, 135], [162, 176]]
 #lids 1.8
@@ -112,7 +114,7 @@ g_z_ch_val = 0
 #lids 2.0
 #be_arr = [[4, 17], [44, 58], [85, 98], [124, 137]]
 #lids 1.95
-be_arr = [[4, 18], [45, 58], [84, 98], [124, 138]]
+#be_arr = [[4, 18], [45, 58], [84, 98], [124, 138]]
 
 
 g_begin = be_arr[0][0]
