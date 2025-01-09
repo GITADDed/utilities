@@ -96,7 +96,21 @@ def parse_command(command):
     return ans
         
 
-a1x, a1y, b1x, b1y, a2x, a2y, b2x, b2y = 1273.154, 2229.503, 166.973, 2337.664, 53.889, 2563.695, 53.889, 2288.746
+a1x, a1y, b1x, b1y, a2x, a2y, b2x, b2y = 452.804, 2218.757, 1802.807, 2087.487, 1914.966, 1869.129, 1914.966, 2131.935
 ans = intersection(a1x, a1y, b1x, b1y, a2x, a2y, b2x, b2y)
-print('X' + "{:.3f}".format(ans[0]) + ' Y' + "{:.3f}".format(ans[1]))
-
+a3x, a3y, b3x, b3y = 1802.807, 1914.052, 452.804, 1782.776
+ans2 = intersection(a3x, a3y, b3x, b3y, a2x, a2y, b2x, b2y)
+print('G0X' + "{:.3f}".format(ans[0]) + 'Y' + "{:.3f}".format(ans[1]))
+print('G1Z-10.200F1500.0')
+if a1x > b1x:
+    print('G1X' + str(a1x) + 'Y' + str(a1y) + 'F3500.0')
+else:
+    print('G1X' + str(b1x) + 'Y' + str(b1y) + 'F3500.0')
+print('G0Z15.000')
+print('G0X' + "{:.3f}".format(ans2[0]) + 'Y' + "{:.3f}".format(ans2[1]))
+print('G1Z-10.200F1500.0')
+if a3x > b3x:
+    print('G1X' + str(a3x) + 'Y' + str(a3y) + 'F3500.0')
+else:
+    print('G1X' + str(b3x) + 'Y' + str(b3y) + 'F3500.0')
+print('G0Z15.000')
