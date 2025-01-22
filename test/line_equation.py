@@ -94,11 +94,11 @@ def parse_command(command):
         y = float(command[yb + 1:ye + 1])
 
     return ans
-        
+    
 
-a1x, a1y, b1x, b1y, a2x, a2y, b2x, b2y = 452.804, 2218.757, 1802.807, 2087.487, 1914.966, 1869.129, 1914.966, 2131.935
+a1x, a1y, b1x, b1y, a3x, a3y, b3x, b3y = 457.240, 2231.185, 1758.158, 2104.716, 1758.158, 1921.517, 457.240, 1795.204
+a2x, a2y, b2x, b2y = 1866.498, 1877.161, 1866.498, 2149.641
 ans = intersection(a1x, a1y, b1x, b1y, a2x, a2y, b2x, b2y)
-a3x, a3y, b3x, b3y = 1802.807, 1914.052, 452.804, 1782.776
 ans2 = intersection(a3x, a3y, b3x, b3y, a2x, a2y, b2x, b2y)
 print('G0X' + "{:.3f}".format(ans[0]) + 'Y' + "{:.3f}".format(ans[1]))
 print('G1Z-10.200F1500.0')
