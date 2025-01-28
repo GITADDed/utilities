@@ -94,10 +94,34 @@ def parse_command(command):
         y = float(command[yb + 1:ye + 1])
 
     return ans
+
+file_path = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lids\\'
+file_path_ch = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lidscut\\'
+
+file_name = '1.95(2) 1.85(2)'
+
+file_postfix = '_changed_copy'
+file_postfix_ch = '_cut'
+
+file_end = '.tap'
+
+command_file = open(file_path + file_name + file_postfix + file_end)    
+with open(file_path_ch + file_name + file_postfix_ch + file_end, 'w+') as file_ch:
+    commands = command_file.read().split('G0Z15.000')
+
+    i = 0
+    count = 0
+    for command_block in commands:
+        if i % 3 == 0:
+            command_block = command_block.split('\n')
+            for command in command_block:
+                
+                
+        
     
 
-a1x, a1y, b1x, b1y, a3x, a3y, b3x, b3y = 457.240, 2231.185, 1758.158, 2104.716, 1758.158, 1921.517, 457.240, 1795.204
-a2x, a2y, b2x, b2y = 1866.498, 1877.161, 1866.498, 2149.641
+a1x, a1y, b1x, b1y, a3x, a3y, b3x, b3y = 454.218, 2189.950, 1904.218, 2048.950, 1904.218, 1894.969, 454.218, 1753.969
+a2x, a2y, b2x, b2y = 2014.912, 1849.843, 2014.912, 2093.212
 ans = intersection(a1x, a1y, b1x, b1y, a2x, a2y, b2x, b2y)
 ans2 = intersection(a3x, a3y, b3x, b3y, a2x, a2y, b2x, b2y)
 print('G0X' + "{:.3f}".format(ans[0]) + 'Y' + "{:.3f}".format(ans[1]))

@@ -1,7 +1,7 @@
 file_path = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lidsorig\\'
 file_path_ch = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lids\\'
 
-file_name = '8gr_2.0_1.9'
+file_name = '123'
 postfix = '_changed_copy'
 file_end = '.tap'
 
@@ -89,13 +89,13 @@ def cnc_move(commands, ch_x, ch_y, ch_z, begin, end):
         k += 1
 
 
-#g_x_ch_val = 58
-#g_y_ch_val = 9.714
-#g_z_ch_val = 0
-
-g_x_ch_val = 0
-g_y_ch_val = 1
+g_x_ch_val = 58
+g_y_ch_val = 9.714
 g_z_ch_val = 0
+
+#g_x_ch_val = 0
+#g_y_ch_val = 1
+#g_z_ch_val = 0
 
 
 #milling 1.7 
@@ -121,7 +121,9 @@ g_z_ch_val = 0
 #lids 1.95
 #be_arr = [[4, 18], [45, 58], [84, 98], [124, 138]]
 #bottom 8_gr
-be_arr = [[103, 151]]
+#be_arr = [[103, 151]]
+#lids 1.95(2) 1.85(2)
+be_arr = [[4, 18], [44, 58], [84, 97], [123, 137]]
 
 g_begin = be_arr[0][0]
 g_end = be_arr[0][1]
