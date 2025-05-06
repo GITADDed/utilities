@@ -1,7 +1,7 @@
-file_path = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lidsorig\\'
-file_path_ch = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\lids\\'
+file_path = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\millingorig\\'
+file_path_ch = 'C:\\Users\\Administrator\\PythonProgs\\utilities\\test\\milling\\'
 
-file_name = '123'
+file_name = '1.75'
 postfix = '_changed_copy'
 file_end = '.tap'
 
@@ -90,7 +90,7 @@ def cnc_move(commands, ch_x, ch_y, ch_z, begin, end):
 
 
 g_x_ch_val = 58
-g_y_ch_val = 9.714
+g_y_ch_val = -9.714
 g_z_ch_val = 0
 
 #g_x_ch_val = 0
@@ -99,7 +99,7 @@ g_z_ch_val = 0
 
 
 #milling 1.7 
-#be_arr = [[4, 3626], [3628, 7250], [7252, 10874], [10876, 14498], [14500, 18122]]
+be_arr = [[4, 3626], [3628, 7250], [7252, 10874], [10876, 14498], [14500, 18122]]
 
 # [begin value, end value]
 # lids 1.75
@@ -123,7 +123,12 @@ g_z_ch_val = 0
 #bottom 8_gr
 #be_arr = [[103, 151]]
 #lids 1.95(2) 1.85(2)
-be_arr = [[4, 18], [44, 58], [84, 97], [123, 137]]
+#be_arr = [[4, 18], [44, 58], [84, 97], [123, 137]]
+
+#milling 1.8
+#be_arr = [[4, 3506], [3507, 7009], [7010, 10512], [10513, 14014]]
+
+#be_arr = [[150, 198]]
 
 g_begin = be_arr[0][0]
 g_end = be_arr[0][1]
